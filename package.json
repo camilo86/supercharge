@@ -1,6 +1,6 @@
 {
   "name": "supercharge",
-  "displayName": "supercharge",
+  "displayName": "Supercharge",
   "description": "Handy development utilities powered by AI ",
   "version": "0.0.1",
   "engines": {
@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:supercharge.helloWorld"
+    "onCommand:supercharge.base64Decode"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "supercharge.helloWorld",
-        "title": "Hello World"
+        "command": "supercharge.base64Decode",
+        "title": "Supercharge: Base64 decode"
       }
     ]
   },
