@@ -9,7 +9,7 @@ const commands = [
  * Initializes supercharge extension.
  * This function is called by vscode.
  *
- * @param context Extension context
+ * @param context Extension context.
  */
 export function activate(context: vscode.ExtensionContext) {
   for (let command of commands) {

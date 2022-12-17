@@ -20,6 +20,11 @@ export default async function base64DecodeCommand() {
   }
 }
 
+/**
+ * Base64 decode flow using a text input.
+ * Decoded text is copied to clipboard.
+ * @returns Promise.
+ */
 async function decodeFromTextInput() {
   const text = await vscode.window.showInputBox({
     title: 'Supercharge: Base64 decode',
@@ -36,6 +41,11 @@ async function decodeFromTextInput() {
   );
 }
 
+/**
+ * Base64 decodes one or more text selections inline.
+ * @param selections Selections to decode.
+ * @param textEditor Text editor instance.
+ */
 function decodeSelections(
   selections: readonly vscode.Selection[],
   textEditor: vscode.TextEditor
