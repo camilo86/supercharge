@@ -10,7 +10,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:supercharge.base64Decode"
+    "onCommand:supercharge.base64Decode",
+    "onCommand:supercharge.base64Encode"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -18,6 +19,10 @@
       {
         "command": "supercharge.base64Decode",
         "title": "Supercharge: Base64 decode"
+      },
+      {
+        "command": "supercharge.base64Encode",
+        "title": "Supercharge: Base64 encode"
       }
     ]
   },

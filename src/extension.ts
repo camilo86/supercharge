@@ -1,8 +1,10 @@
 import * as vscode from 'vscode';
 import base64DecodeCommand from './commands/base64Decode';
+import base64EncodeCommand from './commands/base64Encode';
 
 const commands = [
   { name: 'supercharge.base64Decode', handler: base64DecodeCommand },
+  { name: 'supercharge.base64Encode', handler: base64EncodeCommand },
 ];
 
 /**
