@@ -11,7 +11,8 @@
   ],
   "activationEvents": [
     "onCommand:supercharge.base64Decode",
-    "onCommand:supercharge.base64Encode"
+    "onCommand:supercharge.base64Encode",
+    "onCommand:supercharge.generateGUID"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -23,6 +24,10 @@
       {
         "command": "supercharge.base64Encode",
         "title": "Supercharge: Base64 encode"
+      },
+      {
+        "command": "supercharge.generateGUID",
+        "title": "Supercharge: Generate GUID/UUID"
       }
     ]
   },
