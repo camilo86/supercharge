@@ -12,13 +12,16 @@ export default async function generateGUID() {
   const activeTextEditor = vscode.window.activeTextEditor;
 
   if (!activeTextEditor || activeTextEditor.selections.length === 0) {
-    await generateGUIDFromTextInput();
+    await generateGUIDInClipboard();
   } else {
     generateGUIDInSelections(activeTextEditor.selections, activeTextEditor);
   }
 }
 
-async function generateGUIDFromTextInput() {
+/**
+ * Generates a new GUID and writes it to clipboard.
+ */
+async function generateGUIDInClipboard() {
   const uuid = generator.generateUUID();
 
   vscode.env.clipboard.writeText(uuid);
@@ -27,6 +30,11 @@ async function generateGUIDFromTextInput() {
   );
 }
 
+/**
+ * Generates a GUID in text selections inline.
+ * @param selections Text selections.
+ * @param textEditor Text editor instance.
+ */
 async function generateGUIDInSelections(
   selections: readonly vscode.Selection[],
   textEditor: vscode.TextEditor

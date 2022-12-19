@@ -43,7 +43,7 @@ async function encodeFromTextInput() {
 
 /**
  * Base64 encodes one or more text selections inline.
- * @param selections Selections to decode
+ * @param selections Selections to encode.
  * @param textEditor Text editor instance.
  */
 function encodeSelections(
