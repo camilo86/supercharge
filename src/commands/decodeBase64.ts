@@ -10,7 +10,7 @@ import * as encoding from '../lib/encoding';
  * If used without selection, a text input asks for base64 encoded string,
  * and then copies the decoded string to your clipboard.
  */
-export default async function base64DecodeCommand() {
+export default async function decodeBase64Command() {
   const activeTextEditor = vscode.window.activeTextEditor;
 
   if (!activeTextEditor || activeTextEditor.selections.length === 0) {

@@ -10,20 +10,20 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:supercharge.base64Decode",
-    "onCommand:supercharge.base64Encode",
+    "onCommand:supercharge.decodeBase64",
+    "onCommand:supercharge.encodeBase64",
     "onCommand:supercharge.generateGUID"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "supercharge.base64Decode",
-        "title": "Supercharge: Base64 decode"
+        "command": "supercharge.decodeBase64",
+        "title": "Supercharge: Decode base64"
       },
       {
-        "command": "supercharge.base64Encode",
-        "title": "Supercharge: Base64 encode"
+        "command": "supercharge.encodeBase64",
+        "title": "Supercharge: Encode base64"
       },
       {
         "command": "supercharge.generateGUID",
