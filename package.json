@@ -12,6 +12,7 @@
   "activationEvents": [
     "onCommand:supercharge.decodeBase64",
     "onCommand:supercharge.encodeBase64",
+    "onCommand:supercharge.decodeJWT",
     "onCommand:supercharge.generateGUID"
   ],
   "main": "./dist/extension.js",
@@ -24,6 +25,10 @@
       {
         "command": "supercharge.encodeBase64",
         "title": "Supercharge: Encode base64"
+      },
+      {
+        "command": "supercharge.decodeJWT",
+        "title": "Supercharge: Decode JWT"
       },
       {
         "command": "supercharge.generateGUID",

@@ -15,3 +15,17 @@ export function encodeBase64(str: string) {
 export function decodeBase64(base64Str: string) {
   return Buffer.from(base64Str, 'base64').toString('utf-8');
 }
+
+export function decodeJWT(jwt: string) {
+  const jwtParts = jwt.split('.');
+
+  if (jwtParts.length !== 3) {
+    throw new Error('JWT is not valid.');
+  }
+
+  return {
+    header: decodeBase64(jwtParts[0]),
+    payload: decodeBase64(jwtParts[1]),
+    signature: jwtParts[2],
+  };
+}

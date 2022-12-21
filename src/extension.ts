@@ -1,11 +1,13 @@
 import * as vscode from 'vscode';
 import decodeBase64Command from './commands/decodeBase64';
 import encodeBase64Command from './commands/encodeBase64';
+import decodeJWTCommand from './commands/decodeJWT';
 import generateGUIDCommand from './commands/generateGUID';
 
 const commands = [
   { name: 'supercharge.decodeBase64', handler: decodeBase64Command },
   { name: 'supercharge.encodeBase64', handler: encodeBase64Command },
+  { name: 'supercharge.decodeJWT', handler: decodeJWTCommand },
   { name: 'supercharge.generateGUID', handler: generateGUIDCommand },
 ];
 
