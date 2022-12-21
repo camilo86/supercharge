@@ -35,7 +35,7 @@ async function decodeFromTextInput() {
     return;
   }
 
-  vscode.env.clipboard.writeText(encoding.base64Decode(text));
+  vscode.env.clipboard.writeText(encoding.decodeBase64(text));
   vscode.window.showInformationMessage(
     'Base64 decoded string was copied to your clipboard.'
   );
@@ -53,7 +53,7 @@ function decodeSelections(
   const decodedTextRanges = selections.map((selection) => {
     const textRange = new vscode.Range(selection.start, selection.end);
     const text = textEditor.document.getText(textRange);
-    const decodedText = encoding.base64Decode(text);
+    const decodedText = encoding.decodeBase64(text);
 
     return { decodedText, textRange };
   });
