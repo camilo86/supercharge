@@ -1,71 +1,40 @@
-# supercharge README
+# Supercharge
 
-This is the README for your extension "supercharge". After writing up a brief description, we recommend including the following sections.
+Utility commands to supercharge your VSCode experience
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Superchage includes various commands that you may find useful while coding.
 
-For example if there is an image subfolder under your extension project workspace:
+### Commands
 
-\!\[feature X\]\(images/feature-x.png\)
+| Commands           | Description               | How to run                                  |
+|--------------------|---------------------------|---------------------------------------------|
+| Decode base64      | Decodes a text to base64  | Run as command from input or text selection |
+| Encode base64      | Encodes a text to base64  | Run as command from input or text selection |
+| Decode JWT         | Decodes a JSON Web Token  | Run as command from input or text selection |
+| Generate GUID/UUID | Creates a new random GUID | Run as command from input or text selection |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## How to use
 
-## Requirements
+To run a command in VSCode:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open command palette by going to `View > Command Palette` or by using the keyboard shortcut `CTRL+SHIFT+P`
+2. Type the supercharge command you would like to run.
+    - Supercharge commands starts with `supercharge:` prefix, for example `supercharge: Decode base64`.
+3. Profit
 
-## Extension Settings
+**Pro tip:** Many commands can be run inline (text selection). So for example, say have a long string in a document that you would like to encode in base64; you could select such text, open the command pallete, and run the `supercharge: Encode base64`. This will replace the selected text with its base64 representation. By the way, this works for multiple text selections as well!
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
+Initial release of supercharge.
 
-Initial release of ...
+## Contributing
 
-### 1.0.1
+So you know: I'm working on this on my free time so I'm not checking this repo 24/7. 
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Anyhow, if you would like to add a useful command or request a feature, please open up a pull request with the details 😊.
