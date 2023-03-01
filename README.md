@@ -1,6 +1,6 @@
 # Supercharge
 
-Utility commands to supercharge your VSCode experience
+Utility commands to supercharge your VSCode experience.
 
 ## Features
 

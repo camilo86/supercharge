@@ -1,7 +1,8 @@
 {
   "name": "supercharge",
   "displayName": "Supercharge",
-  "description": "Handy development utilities powered by AI ",
+  "description": "Utility commands to supercharge your VSCode experience.",
+  "publisher": "camilo",
   "version": "0.0.1",
   "repository": {
     "url": "https://github.com/camilo86/supercharge"
