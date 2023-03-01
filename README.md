@@ -24,7 +24,7 @@ To run a command in VSCode:
     - Supercharge commands starts with `supercharge:` prefix, for example `supercharge: Decode base64`.
 3. Profit
 
-**Pro tip:** Many commands can be run inline (text selection). So for example, say have a long string in a document that you would like to encode in base64; you could select such text, open the command pallete, and run the `supercharge: Encode base64`. This will replace the selected text with its base64 representation. By the way, this works for multiple text selections as well!
+**Pro tip:** Many commands can be run inline (text selection). So for example, say have a long string in a document that you would like to encode in base64; you could select such text, open the command palette, and run the `supercharge: Encode base64`. This will replace the selected text with its base64 representation. By the way, this works for multiple text selections as well!
 
 
 ## Release Notes
@@ -37,4 +37,4 @@ Initial release of supercharge.
 
 So you know: I'm working on this on my free time so I'm not checking this repo 24/7. 
 
-Anyhow, if you would like to add a useful command or request a feature, please open up a pull request with the details 😊.
+Anyhow, if you would like to add a useful command or request a feature, please open a pull request with the details 😊.
