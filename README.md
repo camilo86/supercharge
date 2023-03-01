@@ -8,12 +8,12 @@ Superchage includes various commands that you may find useful while coding.
 
 ### Commands
 
-| Commands           | Description               | How to run                                  |
-|--------------------|---------------------------|---------------------------------------------|
-| Decode base64      | Decodes a text to base64  | Run as command from input or text selection |
-| Encode base64      | Encodes a text to base64  | Run as command from input or text selection |
-| Decode JWT         | Decodes a JSON Web Token  | Run as command from input or text selection |
-| Generate GUID/UUID | Creates a new random GUID | Run as command from input or text selection |
+| Commands           | Description               |
+|--------------------|---------------------------|
+| Decode base64      | Decodes a text to base64  |
+| Encode base64      | Encodes a text to base64  |
+| Decode JWT         | Decodes a JSON Web Token  |
+| Generate GUID/UUID | Creates a new random GUID |
 
 ## How to use
 
